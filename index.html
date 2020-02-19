@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Software de contexto</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div>
+		<div class="text-center">
+		<h1> Matriz DOFA-PESTAL </h1>
+	</div>
+	<span onclick="botonflotante()" style="float: right;">Menu</span>
+	</div>
+	
+<div style="display: flex;">
+
+
+
+<div  style="float: left; width: 100%; display: inline-block;"><!-- Inicio tabla !-->		
+	<!-- INICIO DE MATRIZ DOFA PESTAL -->			
+	<table class="table" id="Matriz-Dofa-Pestal">
+	<thead class="thead-dark">
+	<tr>
+	<th scope="col"></th>
+	</th>
+	<!-- DOFA -->
+	<th scope="col">
+	AMENAZAS
+	</th>
+	<th scope="col">
+	DEBILIDADES
+	</th>
+	<th scope="col">
+	FORTALEZAS
+	</th>
+	<th scope="col">
+	OPORTUNIDADES
+	</th>
+
+	</tr>
+	</thead>
+	<!-- PESTAL -->
+	<tr class="table-warning" >
+	<th scope="row" id="POLITICO" onclick="myFunction('POLITICO')">
+	POLITICO
+	</th>
+	<th>
+	<div id="parentElement1">
+	<span id="childElement1" ></span>
+	</div>
+	</th>
+	<th>
+	<div id="parentElement2">
+	<span id="childElement2" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement3">
+	<span id="childElement3" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement4">
+	<span id="childElement4" ></span>
+	</div>
+	</th>
+	</tr>
+
+	<tr class="table-secondary" >
+	<th scope="row" id="ECONOMICO" onclick="myFunction('ECONOMICO')">
+	ECONOMICO
+	</th>
+	<th>
+	<div id="parentElement21">
+	<span id="childElement21" ></span>
+	</div>
+	</th>
+	<th>
+	<div id="parentElement22">
+	<span id="childElement22" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement23">
+	<span id="childElement23" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement24">
+	<span id="childElement24" ></span>
+	</div>
+	</th>
+	</tr>
+
+	<tr class="bg-danger">
+	<th scope="row" id='SOCIAL' onclick="myFunction('SOCIAL')">
+	SOCIAL
+	</th>
+	<th>
+	<div id="parentElement31">
+	<span id="childElement31" ></span>
+	</div>
+	</th>
+	<th>
+	<div id="parentElement32">
+	<span id="childElement32" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement33">
+	<span id="childElement33" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement34">
+	<span id="childElement34" ></span>
+	</div>
+	</th>
+	</tr>
+
+	<tr class="table-info">
+	<th scope="row" id='TECNOLOGICO'  onclick="myFunction('TECNOLOGICO')">
+	TECNOLOGICO
+	</th>
+	<th>
+	<div id="parentElement41">
+	<span id="childElement41" ></span>
+	</div>
+	</th>
+	<th>
+	<div id="parentElement42">
+	<span id="childElement42" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement43">
+	<span id="childElement43" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement44">
+	<span id="childElement44" ></span>
+	</div>
+	</th>
+
+	</tr>
+	<tr class="bg-success">
+	<th scope="row" id='AMBIENTAL' onclick="myFunction('AMBIENTAL')">
+	AMBIENTAL
+	</th>
+	<th>
+	<div id="parentElement51">
+	<span id="childElement51" ></span>
+	</div>
+	</th>
+	<th>
+	<div id="parentElement52">
+	<span id="childElement52" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement53">
+	<span id="childElement53" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement54">
+	<span id="childElement54" ></span>
+	</div>
+	</th>
+	</tr>
+
+	<tr class="bg-primary">
+	<th scope="row" id='LEGAL' onclick="myFunction('LEGAL')">
+	LEGAL
+	</th>
+
+	<th>
+	<div id="parentElement61">
+	<span id="childElement61" ></span>
+	</div>
+	</th>
+	<th>
+	<div id="parentElement62">
+	<span id="childElement62" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement63">
+	<span id="childElement63" ></span>
+	</div>
+	</th><th>
+	<div id="parentElement64">
+	<span id="childElement64" ></span>
+	</div>
+	</th>
+
+	</tr>
+
+	</table>
+</div><!--Fin tabla !-->
+
+<div class="conf-panel">
+
+<div class="card" style="width: 18rem;">
+	<div class="card-body"></br>
+		<div class="text-center"><h5> Contexto Estrategico </h5></div></br>
+		<div class="input-group mb-3">
+		<div class="input-group-prepend">
+		<span class="input-group-text" id="inputGroup-sizing-default"> Nombre de la razon Social </span>
+		</div>
+		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+		</div></br>
+	</div>
+
+	<div class="input-group">
+		<div class="input-group-prepend">
+		<span class="input-group-text" id="">DOFA para : </span>
+		</div>
+		<select name="Sucursal" id="Sucursal" class="custom-select" value="<?php echo $Sucursal ?>" required>
+		<option value="1">Proceso</option> 
+		<option value="2" >Proyecto</option>
+		<option value="3" >Producto</option>
+		<option value="3" >Servicio</option>
+		</select>
+	</div></br>	
+
+	<div><button type="button" class="btn btn-primary btn-lg btn-block" >Iniciar</button></div>
+</div>
+	
+	<div class="card" style="width: 18rem;">
+		<div class="card-body"><h5>Control de Versiones</h5></div>
+	</div>
+
+</div>
+
+</div>	
+<script type="text/javascript" src="myFunction.js"></script>
+</body>
+</html>

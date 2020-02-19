@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Definicion de estrategias</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="definicion_de_estategias.css">
+</head>
+<body>
+
+	<div class="text-center">
+		<h2>Definicion de estrategias</h2>
+	</div>
+
+	<div>
+		
+		<div class="card" style="width: 30%;float: left;">
+			<div class="card-body">
+				<h5> Selecciones el tipo de Estrategia que desea crear </h5>
+
+				<!-- FO-->
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<div class="input-group-text">
+				<input id="FO" name="FO" type="checkbox">
+				</div>
+				</div>
+				<input type="text" class="form-control" value="FO ( Fortaleza - Oportunidad">
+				</div>
+
+				<!-- DO-->
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<div class="input-group-text">
+				<input id="DO" name="DO" type="checkbox">
+				</div>
+				</div>
+				<input type="text" class="form-control" value="DO ( Debilidad - Oportunidad">
+				</div>
+				
+				<!-- FA-->
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<div class="input-group-text">
+				<input id="FA" name="FA" type="checkbox">
+				</div>
+				</div>
+				<input type="text" class="form-control" value="FA ( Fortaleza - Amenaza">
+				</div>
+
+				<!-- DA-->
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<div class="input-group-text">
+				<input id="DA" name="DA" type="checkbox">
+				</div>
+				</div>
+				<input type="text" class="form-control" value="DA ( Debilidad - Amenaza">
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="creator" style="float: right;width: 70%;">
+	<div style="float:left;width: 30%;">
+		<select>Fortalezas</select></br>	
+		<select>Op</select></br>
+		<select>Ame</select></br>
+		<select>Deb</select></br>
+	</div>
+
+	<div style="float:left;width: 70%; display: inline-block;">
+		<table class="table">
+			<thead class="thead-dark"></thead>
+			<tr>
+				<th scope="col">
+					Criterio
+				</th>
+				<th scope="col">
+					Estrategia
+				</th>
+			</tr>
+		</thead>
+		</table>
+	</div>
+	<button>Guardar Estrategia</button>
+	</div>
+
+
+	<div style="width:100%;">
+		
+		visualizador de cosas
+	</div>
+<script type="text/javascript" src="definicion_de_estategias.js"></script>
+</body>
+</html>

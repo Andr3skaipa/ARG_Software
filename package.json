@@ -1,0 +1,54 @@
+{
+  "name": "context",
+  "version": "1.0.0",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "author": "Andres Alejandro Caipa Aldana",
+  "license": "ISC",
+  "build": {
+    "appId": "enupal-electronv1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Aplications"
+        }
+      ]
+    }
+  },
+  "win": {
+    "target": "NSIS",
+    "icon": "build/arg-favicon.ico"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "electron": "^2.0.18",
+    "git": "^0.1.5",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.28.1",
+    "electron-packager": "^12.1.0"
+  },
+  "engines": {
+    "node": ">6.9.4",
+    "npm": ">4.2.0"
+  },
+  "description": "Contiene matriz dofa-pestal",
+  "keywords": [
+    "dofa",
+    "pestal"
+  ]
+}

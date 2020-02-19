@@ -1,0 +1,13 @@
+.conf-panel{
+	display: none;
+	transition: 1s;
+}
+
+.visible{
+	display: inline-block;
+	float: right;
+}
+
+.invisible{
+	display: none;
+}
